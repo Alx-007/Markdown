@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <h1>Crear tu perfil de usuario</h1>
+    <form action="" method="">
+      <fieldset>
+        <legend>Informacion Basica</legend>
+        <label for="username">Nombre de usuario:</label>
+        <input
+          id="username"
+          type="text"
+          name="username"
+          placeholder="Escribe tu nombre"
+          required
+        /><br />
+        <label for="password">Contraseña:</label>
+        <input
+          id="password"
+          type="password"
+          name="password"
+          placeholder="Escribe tu contraseña"
+          required
+        />
+        <br />
+        <label for="email">E-mail:</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Escribe tu correo"
+          required
+        />
+        <br />
+        <label for="phone">Telefono:</label>
+        <input
+          id="phone"
+          type="tel"
+          name="phone"
+          placeholder="Escribe tu telefono"
+          required
+        />
+        <br />
+        <label for="website">Sitio Personal:</label>
+        <input
+          id="website"
+          type="url"
+          name="website"
+          placeholder="Escribe tu contraseña"
+          required
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Informacion adicional</legend>
+        <label for="edad">Tu edad:</label>
+        <input type="number" name="edad" id="edad" />
+        <br />
+        <label for="nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" name="nacimiento" id="nacimiento" />
+        <br />
+        <label for="satisfaccion">Nivel de satisfaccion:</label>
+        <input
+          type="range"
+          min="1"
+          max="99"
+          name="satisfaccion"
+          id="satisfaccion"
+        />
+        <br />
+        <label for="color">Elige un color para tu perfil:</label>
+        <input type="color" name="color" id="color" value="#ffffff" />
+        <br />
+        <label for="paises">Selecciona un pais: </label>
+        <select name="paises" id="paises">
+          <option value="">-- Selecciona una opción --</option>
+          <option value="mexico">Mexico</option>
+          <option value="españa">España</option>
+          <option value="argentina">Argentina</option></select
+        ><br />
+        <label for="ciudades">Selecciona una ciudad</label>
+        <input
+          list="lista-ciudades"
+          id="ciudades"
+          name="ciudades"
+          placeholder="-- Escribe una ciudad --"
+        />
+        <datalist id="lista-ciudades">
+          <option value="Lagos de Moreno"></option>
+          <option value="Guadalajara"></option>
+          <option value="Madrid"></option>
+          <option value="Barcelona"></option></datalist
+        ><br />
+        <label for="avatar">Subir Foto</label><br />
+        <input type="file" name="avatar" id="avatar" /><br />
+        <p>¿Que temas te interesan?</p>
+        <input
+          type="checkbox"
+          name="intereses"
+          id="tecnologia"
+          value="tecnologia"
+        />
+        <label for="tecnologia">Tecnologia</label>
+        <input
+          type="checkbox"
+          name="intereses"
+          id="deportes"
+          value="deportes"
+        />
+        <label for="deportes">Deportes</label><br />
+        <p>Selecciona un nivel de suscripcion:</p>
+        <input type="radio" name="suscripcion" id="basico" checked />
+        <label for="basico">Basico</label>
+        <input type="radio" name="suscripcion" id="premium" />
+        <label for="premium">Premium</label><br />
+        <input type="submit" value="Registrar" />
+        <input type="reset" value="limpiar" />
+        <input type="button" value="Boton Generico" />
+      </fieldset>
+    </form>
+  </body>
+</html>
