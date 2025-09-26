@@ -26,7 +26,7 @@
 ## Indice
 - [¿Qué es un input en HTML?](#inputs)
 - [Pasos para conectar a la base de datos](#instrucciones)
-- [Resultados-Finales](#resultados-finales)
+- [Resultados-Finales](#Resultados-Finales)
 
 ## 💭 Inputs
 ### ¿Qué es un input en HTML?
